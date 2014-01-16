@@ -11,3 +11,43 @@
  *= require_self
  *= require_tree .
  */
+
+#navbar {
+  width: 940px;
+  height: 35px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #2980b9;
+  padding-top: 10px;
+}
+
+#navbar li { 
+  display: inline; 
+  padding-right: 40px; 
+  font-color: white;
+}
+
+#jobstable th {
+  padding-right: 90px;
+  text-align: left;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button a:visited {
+  text-decoration: none;
+  color: white;
+}

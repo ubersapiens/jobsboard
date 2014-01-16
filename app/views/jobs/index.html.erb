@@ -1,6 +1,6 @@
-<h1>Listing jobs</h1>
+<p>All the jobs listed here are at startups located in Paris (or allow remote work). Some are now established companies. Others may be only a few weeks old.</p>
 
-<table>
+<table id="jobstable">
   <thead>
     <tr>
       <th>Title</th>
@@ -20,9 +20,9 @@
         <td><%= job.company %></td>
         <td><%= job.location %></td>
         <td><%= job.salary %></td>
-        <td><%= link_to 'Show', job %></td>
-        <td><%= link_to 'Edit', edit_job_path(job) %></td>
-        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn btn-success"><%= link_to 'Show', job %></button></td>
+        <td><button type="button" class="btn btn-warning"><%= link_to 'Edit', edit_job_path(job) %></button></td>
+        <td><button type="button" class="btn btn-danger"><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
